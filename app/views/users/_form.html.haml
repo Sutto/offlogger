@@ -1,0 +1,9 @@
+= f.input :display_name, :required => true, :class => "title"
+
+= f.input :login, :required => true, :class => "title"
+
+= f.input :password, :required => @user.new_record?, :class => "title"
+
+= f.input :password_confirmation, :required => @user.new_record?, :class => "title"
+
+%p.button-field= f.submit "#{@user.new_record? ? "Create" : "Update"} your account"
