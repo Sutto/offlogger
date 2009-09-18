@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090918165437) do
+ActiveRecord::Schema.define(:version => 20090918170602) do
+
+  create_table "nicks", :force => true do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "nicks", ["user_id"], :name => "index_nicks_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "login"
