@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   
   acts_as_authentic
   
+  has_many :nicks
+  has_many :events, :through => :nicks
+  
+  
   validates_presence_of :display_name, :on => :create, :message => "can't be blank"
   
   def self.[](login)

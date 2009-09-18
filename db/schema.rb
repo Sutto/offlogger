@@ -9,7 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090918170602) do
+ActiveRecord::Schema.define(:version => 20090918171428) do
+
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.text     "message"
+    t.datetime "occured_at"
+    t.integer  "nick_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "events", ["name", "nick_id"], :name => "index_events_on_name_and_nick_id"
+  add_index "events", ["name", "occured_at"], :name => "index_events_on_name_and_occured_at"
+  add_index "events", ["name"], :name => "index_events_on_name"
+  add_index "events", ["nick_id"], :name => "index_events_on_nick_id"
+  add_index "events", ["occured_at"], :name => "index_events_on_occured_at"
 
   create_table "nicks", :force => true do |t|
     t.string   "name"

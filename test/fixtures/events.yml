@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  message: MyText
+  nick_id: 1
+  occured_at: 2009-09-19 01:14:28
+
+two:
+  name: MyString
+  message: MyText
+  nick_id: 1
+  occured_at: 2009-09-19 01:14:28

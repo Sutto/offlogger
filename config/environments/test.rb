@@ -8,3 +8,4 @@ config.action_mailer.delivery_method = :test
 
 config.gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http://gems.github.com'
 config.gem 'rr'
+config.gem "redgreen"
