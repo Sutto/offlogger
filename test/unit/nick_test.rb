@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: nicks
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  user_id    :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 require 'test_helper'
 
 class NickTest < ActiveSupport::TestCase
