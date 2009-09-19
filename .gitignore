@@ -24,3 +24,5 @@ public/uploads/**/*
 *.swp
 config/*.sphinx.conf
 db/sphinx/
+irc-bot/tmp
+irc-bot/log/*

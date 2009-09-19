@@ -1,0 +1,9 @@
+default:
+  target: "#marvin-testing"
+  user: OffBot
+  name: OffBot
+  nick: OffBot
+  nicks:
+    - OffBot1000
+    - OffBot2000
+    - OffBot3000
