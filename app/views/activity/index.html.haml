@@ -1,0 +1,10 @@
+#irc-messages
+  - grouped_by_author_and_type.each do |items|
+    - type, nick = items[0].name, items[0].nick
+    %div{:class => "irc-group #{type.downcase.dasherize}"}
+      - items.each_with_index do |item, index|
+        .irc-event
+          - if index == 0
+            %span.name= formatted_nick nick
+          = formatted_event 
+      
