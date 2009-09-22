@@ -1,0 +1,37 @@
+#inner-header
+  +clearfix
+  :background #111
+  :padding 0.5em 1em
+  :border-bottom 2px solid #777
+  
+  h1
+    :float left
+    :text-transform uppercase
+    :margin 0
+    :padding 0
+    a
+      +unstyled-link
+      +link-colors(#FFF, #DFD3BC)
+    
+  ul#horizontal-menu
+    :float right
+    :text-transform uppercase
+    :font-weight bold
+    :font-size 1.2em
+    :padding 1em 0 0
+    +horizontal-list(0.5em)
+    li
+      :margin 0.5em 0 0 1em
+      a
+        +unstyled-link
+        +link-colors(#D7B840, #DB3A4A)
+
+#header-actions        
+  :padding 0.5em 1em
+  :background #333
+  :border-bottom 2px solid #AAA
+  :color #EEE
+  
+.inner-wrapper
+  :margin 0 auto
+  :width 960px

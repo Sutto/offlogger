@@ -1,13 +1,16 @@
 #inner-header
+  .inner-wrapper
+    %h1= link_to Settings.site_name, "/"
 
-  %h1= link_to Settings.site_name, "/"
+    %ul#horizontal-menu
+      %li= link_to 'IRC', root_url
+      %li= link_to 'Twitter', '#'
+      - if logged_in?
+        %li= link_to "Logout", user_session_path, :method => :delete
+      - else
+        %li= link_to "Sign up", new_user_path
+        %li= link_to "Login",   new_user_session_path
 
-  %ul#horizontal-menu
-    - if logged_in?
-      %li= link_to "Logout", user_session_path, :method => :delete
-    - else
-      %li= link_to "Home", "/"
-      %li= link_to "Sign up", new_user_path
-      %li= link_to "Login",   new_user_session_path
-    %li= link_to "Help", '#'
-  
+#header-actions
+  .inner-wrapper
+    Actions like search etc go here.

@@ -1,0 +1,182 @@
+/* line 1, ../../app/stylesheets/offlogger/_header.sass */
+#inner-header {
+  overflow: hidden;
+  display: inline-block;
+  background: #111;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid #777; }
+  /* line 5, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
+  #inner-header {
+    display: block; }
+  /* line 7, ../../app/stylesheets/offlogger/_header.sass */
+  #inner-header h1 {
+    float: left;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+    /* line 12, ../../app/stylesheets/offlogger/_header.sass */
+    #inner-header h1 a {
+      color: inherit;
+      text-decoration: inherit;
+      cursor: inherit;
+      color: white; }
+      /* line 18, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/links/_link_colors.sass */
+      #inner-header h1 a:hover {
+        color: #dfd3bc; }
+  /* line 16, ../../app/stylesheets/offlogger/_header.sass */
+  #inner-header ul#horizontal-menu {
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em 0 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    display: inline-block; }
+    /* line 5, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
+    #inner-header ul#horizontal-menu {
+      display: block; }
+    /* line 50, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
+    #inner-header ul#horizontal-menu li {
+      list-style-type: none;
+      margin-left: 0px;
+      white-space: nowrap;
+      display: inline;
+      float: left;
+      padding-left: 0.5em;
+      padding-right: 0.5em; }
+      /* line 40, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
+      #inner-header ul#horizontal-menu li.first {
+        padding-left: 0px; }
+      /* line 42, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
+      #inner-header ul#horizontal-menu li.last {
+        padding-right: 0px; }
+    /* line 23, ../../app/stylesheets/offlogger/_header.sass */
+    #inner-header ul#horizontal-menu li {
+      margin: 0.5em 0 0 1em; }
+      /* line 25, ../../app/stylesheets/offlogger/_header.sass */
+      #inner-header ul#horizontal-menu li a {
+        color: inherit;
+        text-decoration: inherit;
+        cursor: inherit;
+        color: #d7b840; }
+        /* line 18, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/links/_link_colors.sass */
+        #inner-header ul#horizontal-menu li a:hover {
+          color: #db3a4a; }
+
+/* line 29, ../../app/stylesheets/offlogger/_header.sass */
+#header-actions {
+  padding: 0.5em 1em;
+  background: #333;
+  border-bottom: 2px solid #AAA;
+  color: #EEE; }
+
+/* line 35, ../../app/stylesheets/offlogger/_header.sass */
+.inner-wrapper {
+  margin: 0 auto;
+  width: 960px; }
+
+/* line 1, ../../app/stylesheets/offlogger/_irc.sass */
+#irc-messages {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8em;
+  border-bottom: 2px solid #CCC; }
+  /* line 6, ../../app/stylesheets/offlogger/_irc.sass */
+  #irc-messages .irc-group {
+    padding: 1em;
+    border: 2px solid #CCC;
+    border-bottom: none; }
+    /* line 10, ../../app/stylesheets/offlogger/_irc.sass */
+    #irc-messages .irc-group.odd {
+      background: #F9F9F9; }
+    /* line 12, ../../app/stylesheets/offlogger/_irc.sass */
+    #irc-messages .irc-group.even {
+      background: #F0F0F0; }
+    /* line 15, ../../app/stylesheets/offlogger/_irc.sass */
+    #irc-messages .irc-group:hover {
+      background: #FFFAD3; }
+    /* line 18, ../../app/stylesheets/offlogger/_irc.sass */
+    #irc-messages .irc-group .irc-event {
+      overflow: hidden;
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: 0.1em solid transparent; }
+      /* line 5, ../../vendor/gems/chriseppstein-compass-0.8.12/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
+      #irc-messages .irc-group .irc-event {
+        display: block; }
+      /* line 23, ../../app/stylesheets/offlogger/_irc.sass */
+      #irc-messages .irc-group .irc-event span.name {
+        font-weight: bold;
+        zoom: 1;
+        display: inline;
+        display: -moz-inline-box;
+        display: inline-block;
+        vertical-align: top;
+        width: 10%;
+        visibility: hidden; }
+      /* line 29, ../../app/stylesheets/offlogger/_irc.sass */
+      #irc-messages .irc-group .irc-event span.first.name {
+        visibility: visible; }
+      /* line 32, ../../app/stylesheets/offlogger/_irc.sass */
+      #irc-messages .irc-group .irc-event span.when {
+        float: right;
+        color: #999;
+        font-size: 0.8em; }
+      /* line 37, ../../app/stylesheets/offlogger/_irc.sass */
+      #irc-messages .irc-group .irc-event span.more-info a {
+        text-decoration: none;
+        font-size: 0.9em;
+        margin-left: 0.5em;
+        font-weight: bold;
+        display: none; }
+      /* line 44, ../../app/stylesheets/offlogger/_irc.sass */
+      #irc-messages .irc-group .irc-event:hover {
+        background: #FFF7E2;
+        border-top-color: #D4D097;
+        border-bottom-color: #D4D097; }
+        /* line 48, ../../app/stylesheets/offlogger/_irc.sass */
+        #irc-messages .irc-group .irc-event:hover span.when {
+          color: #333; }
+        /* line 50, ../../app/stylesheets/offlogger/_irc.sass */
+        #irc-messages .irc-group .irc-event:hover span.name {
+          visibility: visible;
+          color: #CCC; }
+        /* line 53, ../../app/stylesheets/offlogger/_irc.sass */
+        #irc-messages .irc-group .irc-event:hover span.first.name {
+          color: #333; }
+        /* line 55, ../../app/stylesheets/offlogger/_irc.sass */
+        #irc-messages .irc-group .irc-event:hover span.more-info a {
+          display: inline; }
+
+/* line 7, ../../app/stylesheets/screen.sass */
+body {
+  background: #EEE; }
+
+/* line 10, ../../app/stylesheets/screen.sass */
+#contents {
+  width: 960px;
+  margin: 2em auto;
+  -moz-border-radius-topleft: 1em;
+  -moz-border-radius-topright: 1em;
+  -moz-border-radius-bottomleft: 1em;
+  -moz-border-radius-bottomright: 1em;
+  -webkit-border-top-left-radius: 1em;
+  -webkit-border-top-right-radius: 1em;
+  -webkit-border-bottom-left-radius: 1em;
+  -webkit-border-bottom-right-radius: 1em;
+  background: white; }
+  /* line 16, ../../app/stylesheets/screen.sass */
+  #contents #inner-contents {
+    padding: 2em; }
+
+/* line 19, ../../app/stylesheets/screen.sass */
+#footer {
+  text-align: center;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold; }

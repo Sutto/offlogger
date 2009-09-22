@@ -1,10 +1,9 @@
 #irc-messages
   - grouped_by_author_and_type.each do |items|
     - type, nick = items[0].name, items[0].nick
-    %div{:class => "irc-group #{type.downcase.dasherize}"}
+    %div{:class => "irc-group #{type.downcase.dasherize} #{cycle('odd', 'even')}"}
       - items.each_with_index do |item, index|
         .irc-event
-          - if index == 0
-            %span.name= formatted_nick nick
-          = formatted_event 
-      
+          %span.name{:class => ("first" if index == 0)}= formatted_nick nick
+          = formatted_event item
+          %span.when{:title => item.occured_at.to_s(:xml_schema)}== #{time_ago_in_words item.occured_at} ago

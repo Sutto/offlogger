@@ -23,6 +23,8 @@ class Event < ActiveRecord::Base
   
   before_save :default_occured_at
   
+  named_scope :ordered, :order => "id DESC"
+  
   ## Helpers for the logger
   class << self
     %w(action message join quit part).each do |type|
